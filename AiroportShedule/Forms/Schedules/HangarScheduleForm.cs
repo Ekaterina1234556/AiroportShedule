@@ -17,6 +17,7 @@ namespace AiroportShedule.Forms
             InitializeComponent();
             _airportService = airportService ?? throw new ArgumentNullException(nameof(airportService));
             InitializeDataGridView();
+            ApplyRolePermissions();
             cmbHangarFilter.SelectedIndexChanged += cmbHangarFilter_SelectedIndexChanged;
             LoadData();
         }
@@ -31,6 +32,18 @@ namespace AiroportShedule.Forms
             dgvSchedule.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Personnel", HeaderText = "Персонал", Width = 250 });
             dgvSchedule.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Description", HeaderText = "Описание", Width = 300 });
             dgvSchedule.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "Status", HeaderText = "Статус", Width = 120 });
+        }
+
+        private void ApplyRolePermissions()
+        {
+            var currentUser = AppManager.Instance.CurrentUser;
+            bool isCoordinator = currentUser.Role == Role.Coordinator;
+
+            // Только Координатор может управлять записями
+            btnAdd.Visible = isCoordinator;
+            btnEdit.Visible = isCoordinator;
+            btnDelete.Visible = isCoordinator;
+            btnMarkComplete.Visible = isCoordinator;
         }
 
         private void LoadData()
@@ -67,7 +80,7 @@ namespace AiroportShedule.Forms
 
             foreach (DataGridViewRow row in dgvSchedule.Rows)
             {
-                var status = row.Cells["Status"].Value?.ToString() ?? "";
+                var status = row.Cells[6].Value?.ToString() ?? "";
                 switch (status)
                 {
                     case "Запланировано":
@@ -85,6 +98,13 @@ namespace AiroportShedule.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (AppManager.Instance.CurrentUser.Role != Role.Coordinator)
+            {
+                MessageBox.Show("У вас недостаточно прав для добавления записи", "Доступ запрещён",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             using var editor = new HangarScheduleEditorForm(_airportService);
             if (editor.ShowDialog() == DialogResult.OK)
             {
@@ -95,6 +115,13 @@ namespace AiroportShedule.Forms
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (AppManager.Instance.CurrentUser.Role != Role.Coordinator)
+            {
+                MessageBox.Show("У вас недостаточно прав для редактирования записи", "Доступ запрещён",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (dgvSchedule.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Выберите запись для редактирования", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -120,6 +147,13 @@ namespace AiroportShedule.Forms
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (AppManager.Instance.CurrentUser.Role != Role.Coordinator)
+            {
+                MessageBox.Show("У вас недостаточно прав для удаления записи", "Доступ запрещён",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (dgvSchedule.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Выберите запись для удаления", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -153,6 +187,13 @@ namespace AiroportShedule.Forms
 
         private void btnMarkComplete_Click(object sender, EventArgs e)
         {
+            if (AppManager.Instance.CurrentUser.Role != Role.Coordinator)
+            {
+                MessageBox.Show("У вас недостаточно прав для отметки выполнения", "Доступ запрещён",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (dgvSchedule.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Выберите запись для отметки о выполнении", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);

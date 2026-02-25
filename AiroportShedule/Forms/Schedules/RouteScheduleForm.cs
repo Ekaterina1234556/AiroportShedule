@@ -20,6 +20,7 @@ namespace AiroportShedule.Forms
             dtpFilterDate.Value = DateTime.Today;
             dtpFilterDate.ValueChanged += DtpFilterDate_ValueChanged;
             LoadData();
+            ApplyRolePermissions();
         }
 
         private void InitializeDataGridView()
@@ -61,7 +62,7 @@ namespace AiroportShedule.Forms
             // Обновление цвета строк в зависимости от статуса
             foreach (DataGridViewRow row in dgvSchedule.Rows)
             {
-                var status = row.Cells["Status"].Value?.ToString() ?? "";
+                var status = row.Cells[7].Value?.ToString() ?? "";
                 switch (status)
                 {
                     case "Ожидание":
@@ -105,7 +106,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var flightId = (int)dgvSchedule.SelectedRows[0].Cells["Id"].Value;
+            var flightId = (int)dgvSchedule.SelectedRows[0].Cells[0].Value;
             var flight =  _airportService.GetFlightById(flightId);
 
             if (flight == null)
@@ -142,7 +143,7 @@ namespace AiroportShedule.Forms
 
             if (result == DialogResult.Yes)
             {
-                var flightId = (int)dgvSchedule.SelectedRows[0].Cells["Id"].Value;
+                var flightId = (int)dgvSchedule.SelectedRows[0].Cells[0].Value;
 
                 try
                 {
@@ -175,7 +176,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var flightId = (int)dgvSchedule.SelectedRows[0].Cells["Id"].Value;
+            var flightId = (int)dgvSchedule.SelectedRows[0].Cells[0].Value;
             var status = dgvSchedule.SelectedRows[0].Cells["Status"].Value?.ToString() ?? "";
 
             if (status == "В полёте" || status == "Прибыл")
@@ -206,7 +207,21 @@ namespace AiroportShedule.Forms
                 }
             }
         }
+        private void ApplyRolePermissions()
+        {
+            var currentUser = AppManager.Instance.CurrentUser;
+            bool isCoordinator = currentUser.Role == Role.Coordinator;
 
+            // Скрываем все кнопки управления для всех, кроме Координатора
+            btnAdd.Visible = isCoordinator;
+            btnEdit.Visible = isCoordinator;
+            btnDelete.Visible = isCoordinator;
+            btnAllowTakeoff.Visible = isCoordinator;
+            btnAllowLanding.Visible = isCoordinator;
+
+            // Обновляем текст в статусной строке (если есть)
+            // stsUser.Text = $"{currentUser.Role}: {currentUser.FullName}";
+        }
         private  void btnAllowLanding_Click(object sender, EventArgs e)
         {
             if (dgvSchedule.SelectedRows.Count == 0)
@@ -216,7 +231,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var flightId = (int)dgvSchedule.SelectedRows[0].Cells["Id"].Value;
+            var flightId = (int)dgvSchedule.SelectedRows[0].Cells[0].Value;
             var status = dgvSchedule.SelectedRows[0].Cells["Status"].Value?.ToString() ?? "";
 
             if (status != "В полёте")

@@ -28,108 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblRouteName = new System.Windows.Forms.Label();
-            this.txtRouteName = new System.Windows.Forms.TextBox();
-            this.lblExample = new System.Windows.Forms.Label();
-            this.btnAction = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            lblRouteName = new Label();
+            txtRouteName = new TextBox();
+            lblExample = new Label();
+            btnAction = new Button();
+            btnCancel = new Button();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblTitle.Location = new System.Drawing.Point(30, 25);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(420, 46);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Добавление маршрута";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblTitle.ForeColor = Color.FromArgb(33, 37, 41);
+            lblTitle.Location = new Point(30, 25);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(424, 45);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Добавление маршрута";
             // 
             // lblRouteName
             // 
-            this.lblRouteName.AutoSize = true;
-            this.lblRouteName.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblRouteName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblRouteName.Location = new System.Drawing.Point(30, 100);
-            this.lblRouteName.Name = "lblRouteName";
-            this.lblRouteName.Size = new System.Drawing.Size(130, 33);
-            this.lblRouteName.TabIndex = 1;
-            this.lblRouteName.Text = "Маршрут*";
+            lblRouteName.AutoSize = true;
+            lblRouteName.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblRouteName.ForeColor = Color.FromArgb(33, 37, 41);
+            lblRouteName.Location = new Point(30, 100);
+            lblRouteName.Name = "lblRouteName";
+            lblRouteName.Size = new Size(141, 33);
+            lblRouteName.TabIndex = 1;
+            lblRouteName.Text = "Маршрут*";
             // 
             // txtRouteName
             // 
-            this.txtRouteName.BackColor = System.Drawing.Color.White;
-            this.txtRouteName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRouteName.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtRouteName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.txtRouteName.Location = new System.Drawing.Point(30, 145);
-            this.txtRouteName.Name = "txtRouteName";
-            this.txtRouteName.Size = new System.Drawing.Size(500, 40);
-            this.txtRouteName.TabIndex = 2;
+            txtRouteName.BackColor = Color.White;
+            txtRouteName.BorderStyle = BorderStyle.FixedSingle;
+            txtRouteName.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            txtRouteName.ForeColor = Color.FromArgb(33, 37, 41);
+            txtRouteName.Location = new Point(30, 145);
+            txtRouteName.Name = "txtRouteName";
+            txtRouteName.Size = new Size(500, 40);
+            txtRouteName.TabIndex = 2;
             // 
             // lblExample
             // 
-            this.lblExample.AutoSize = true;
-            this.lblExample.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblExample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.lblExample.Location = new System.Drawing.Point(30, 195);
-            this.lblExample.Name = "lblExample";
-            this.lblExample.Size = new System.Drawing.Size(480, 27);
-            this.lblExample.TabIndex = 3;
-            this.lblExample.Text = "Пример: Москва - Санкт-Петербург";
+            lblExample.AutoSize = true;
+            lblExample.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point, 204);
+            lblExample.ForeColor = Color.FromArgb(108, 117, 125);
+            lblExample.Location = new Point(30, 195);
+            lblExample.Name = "lblExample";
+            lblExample.Size = new Size(389, 27);
+            lblExample.TabIndex = 3;
+            lblExample.Text = "Пример: Москва - Санкт-Петербург";
             // 
             // btnAction
             // 
-            this.btnAction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnAction.FlatAppearance.BorderSize = 0;
-            this.btnAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAction.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAction.ForeColor = System.Drawing.Color.White;
-            this.btnAction.Location = new System.Drawing.Point(580, 145);
-            this.btnAction.Name = "btnAction";
-            this.btnAction.Size = new System.Drawing.Size(280, 60);
-            this.btnAction.TabIndex = 4;
-            this.btnAction.Text = "Добавить маршрут";
-            this.btnAction.UseVisualStyleBackColor = false;
+            btnAction.BackColor = Color.FromArgb(46, 90, 136);
+            btnAction.FlatAppearance.BorderSize = 0;
+            btnAction.FlatStyle = FlatStyle.Flat;
+            btnAction.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAction.ForeColor = Color.White;
+            btnAction.Location = new Point(580, 145);
+            btnAction.Name = "btnAction";
+            btnAction.Size = new Size(280, 60);
+            btnAction.TabIndex = 4;
+            btnAction.Text = "Добавить маршрут";
+            btnAction.UseVisualStyleBackColor = false;
+            btnAction.Click += btnAction_Click;
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnCancel.Location = new System.Drawing.Point(580, 225);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(280, 60);
-            this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Отмена";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.FromArgb(248, 249, 250);
+            btnCancel.FlatAppearance.BorderColor = Color.FromArgb(46, 90, 136);
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnCancel.ForeColor = Color.FromArgb(46, 90, 136);
+            btnCancel.Location = new Point(580, 225);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(280, 60);
+            btnCancel.TabIndex = 5;
+            btnCancel.Text = "Отмена";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
             // 
             // RouteEditorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(900, 350);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAction);
-            this.Controls.Add(this.lblExample);
-            this.Controls.Add(this.txtRouteName);
-            this.Controls.Add(this.lblRouteName);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "RouteEditorForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Добавление маршрута — Аэропорт";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(15F, 33F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(248, 249, 250);
+            ClientSize = new Size(900, 350);
+            Controls.Add(btnCancel);
+            Controls.Add(btnAction);
+            Controls.Add(lblExample);
+            Controls.Add(txtRouteName);
+            Controls.Add(lblRouteName);
+            Controls.Add(lblTitle);
+            Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "RouteEditorForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Добавление маршрута — Аэропорт";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

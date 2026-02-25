@@ -314,7 +314,7 @@
             btnAction.FlatStyle = FlatStyle.Flat;
             btnAction.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
             btnAction.ForeColor = Color.White;
-            btnAction.Location = new Point(500, 460);
+            btnAction.Location = new Point(500, 465);
             btnAction.Name = "btnAction";
             btnAction.Size = new Size(280, 60);
             btnAction.TabIndex = 23;
@@ -329,7 +329,7 @@
             btnCancel.FlatStyle = FlatStyle.Flat;
             btnCancel.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
             btnCancel.ForeColor = Color.FromArgb(46, 90, 136);
-            btnCancel.Location = new Point(500, 540);
+            btnCancel.Location = new Point(500, 550);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(280, 60);
             btnCancel.TabIndex = 24;

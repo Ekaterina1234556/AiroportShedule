@@ -28,151 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.lblType = new System.Windows.Forms.Label();
-            this.cmbType = new System.Windows.Forms.ComboBox();
-            this.lblSize = new System.Windows.Forms.Label();
-            this.txtSize = new System.Windows.Forms.TextBox();
-            this.btnAction = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            lblName = new Label();
+            txtName = new TextBox();
+            lblType = new Label();
+            cmbType = new ComboBox();
+            lblSize = new Label();
+            txtSize = new TextBox();
+            btnAction = new Button();
+            btnCancel = new Button();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblTitle.Location = new System.Drawing.Point(30, 25);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(380, 46);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Добавление ангара";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblTitle.ForeColor = Color.FromArgb(33, 37, 41);
+            lblTitle.Location = new Point(30, 25);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(364, 45);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Добавление ангара";
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblName.Location = new System.Drawing.Point(30, 100);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(130, 33);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Название*";
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblName.ForeColor = Color.FromArgb(33, 37, 41);
+            lblName.Location = new Point(30, 100);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(138, 33);
+            lblName.TabIndex = 1;
+            lblName.Text = "Название*";
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.Color.White;
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.txtName.Location = new System.Drawing.Point(30, 145);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(500, 40);
-            this.txtName.TabIndex = 2;
+            txtName.BackColor = Color.White;
+            txtName.BorderStyle = BorderStyle.FixedSingle;
+            txtName.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            txtName.ForeColor = Color.FromArgb(33, 37, 41);
+            txtName.Location = new Point(30, 145);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(500, 40);
+            txtName.TabIndex = 2;
             // 
             // lblType
             // 
-            this.lblType.AutoSize = true;
-            this.lblType.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblType.Location = new System.Drawing.Point(30, 205);
-            this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(55, 33);
-            this.lblType.TabIndex = 3;
-            this.lblType.Text = "Тип*";
+            lblType.AutoSize = true;
+            lblType.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblType.ForeColor = Color.FromArgb(33, 37, 41);
+            lblType.Location = new Point(30, 205);
+            lblType.Name = "lblType";
+            lblType.Size = new Size(74, 33);
+            lblType.TabIndex = 3;
+            lblType.Text = "Тип*";
             // 
             // cmbType
             // 
-            this.cmbType.BackColor = System.Drawing.Color.White;
-            this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbType.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cmbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.cmbType.FormattingEnabled = true;
-            this.cmbType.Items.AddRange(new object[] {
-            "Открытый",
-            "Закрытый"});
-            this.cmbType.Location = new System.Drawing.Point(30, 250);
-            this.cmbType.Name = "cmbType";
-            this.cmbType.Size = new System.Drawing.Size(500, 41);
-            this.cmbType.TabIndex = 4;
+            cmbType.BackColor = Color.White;
+            cmbType.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbType.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            cmbType.ForeColor = Color.FromArgb(33, 37, 41);
+            cmbType.FormattingEnabled = true;
+            cmbType.Items.AddRange(new object[] { "Открытый", "Закрытый" });
+            cmbType.Location = new Point(30, 250);
+            cmbType.Name = "cmbType";
+            cmbType.Size = new Size(500, 41);
+            cmbType.TabIndex = 4;
             // 
             // lblSize
             // 
-            this.lblSize.AutoSize = true;
-            this.lblSize.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblSize.Location = new System.Drawing.Point(30, 310);
-            this.lblSize.Name = "lblSize";
-            this.lblSize.Size = new System.Drawing.Size(95, 33);
-            this.lblSize.TabIndex = 5;
-            this.lblSize.Text = "Размер";
+            lblSize.AutoSize = true;
+            lblSize.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblSize.ForeColor = Color.FromArgb(33, 37, 41);
+            lblSize.Location = new Point(30, 310);
+            lblSize.Name = "lblSize";
+            lblSize.Size = new Size(98, 33);
+            lblSize.TabIndex = 5;
+            lblSize.Text = "Размер";
             // 
             // txtSize
             // 
-            this.txtSize.BackColor = System.Drawing.Color.White;
-            this.txtSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSize.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.txtSize.Location = new System.Drawing.Point(30, 355);
-            this.txtSize.Name = "txtSize";
-            this.txtSize.Size = new System.Drawing.Size(500, 40);
-            this.txtSize.TabIndex = 6;
+            txtSize.BackColor = Color.White;
+            txtSize.BorderStyle = BorderStyle.FixedSingle;
+            txtSize.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            txtSize.ForeColor = Color.FromArgb(33, 37, 41);
+            txtSize.Location = new Point(30, 355);
+            txtSize.Name = "txtSize";
+            txtSize.Size = new Size(500, 40);
+            txtSize.TabIndex = 6;
             // 
             // btnAction
             // 
-            this.btnAction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnAction.FlatAppearance.BorderSize = 0;
-            this.btnAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAction.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAction.ForeColor = System.Drawing.Color.White;
-            this.btnAction.Location = new System.Drawing.Point(580, 250);
-            this.btnAction.Name = "btnAction";
-            this.btnAction.Size = new System.Drawing.Size(280, 60);
-            this.btnAction.TabIndex = 7;
-            this.btnAction.Text = "Добавить ангар";
-            this.btnAction.UseVisualStyleBackColor = false;
+            btnAction.BackColor = Color.FromArgb(46, 90, 136);
+            btnAction.FlatAppearance.BorderSize = 0;
+            btnAction.FlatStyle = FlatStyle.Flat;
+            btnAction.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAction.ForeColor = Color.White;
+            btnAction.Location = new Point(580, 250);
+            btnAction.Name = "btnAction";
+            btnAction.Size = new Size(280, 60);
+            btnAction.TabIndex = 7;
+            btnAction.Text = "Добавить ангар";
+            btnAction.UseVisualStyleBackColor = false;
+            btnAction.Click += btnAction_Click;
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnCancel.Location = new System.Drawing.Point(580, 330);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(280, 60);
-            this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "Отмена";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.BackColor = Color.FromArgb(248, 249, 250);
+            btnCancel.FlatAppearance.BorderColor = Color.FromArgb(46, 90, 136);
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnCancel.ForeColor = Color.FromArgb(46, 90, 136);
+            btnCancel.Location = new Point(580, 335);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(280, 60);
+            btnCancel.TabIndex = 8;
+            btnCancel.Text = "Отмена";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
             // 
             // HangarEditorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(900, 450);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAction);
-            this.Controls.Add(this.txtSize);
-            this.Controls.Add(this.lblSize);
-            this.Controls.Add(this.cmbType);
-            this.Controls.Add(this.lblType);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "HangarEditorForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Добавление ангара — Аэропорт";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(15F, 33F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(248, 249, 250);
+            ClientSize = new Size(900, 450);
+            Controls.Add(btnCancel);
+            Controls.Add(btnAction);
+            Controls.Add(txtSize);
+            Controls.Add(lblSize);
+            Controls.Add(cmbType);
+            Controls.Add(lblType);
+            Controls.Add(txtName);
+            Controls.Add(lblName);
+            Controls.Add(lblTitle);
+            Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "HangarEditorForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Добавление ангара — Аэропорт";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

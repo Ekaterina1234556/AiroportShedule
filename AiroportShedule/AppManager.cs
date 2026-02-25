@@ -27,7 +27,7 @@ namespace AiroportShedule
 
         public static AppManager Instance => _instance.Value;
 
-        public void SetCurrentUser(User? user)
+        public void SetCurrentUser(User user)
         {
             if (user == null)
                 throw new ArgumentNullException(nameof(user));

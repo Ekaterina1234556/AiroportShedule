@@ -150,9 +150,9 @@
             btnAction.FlatStyle = FlatStyle.Flat;
             btnAction.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
             btnAction.ForeColor = Color.White;
-            btnAction.Location = new Point(580, 460);
+            btnAction.Location = new Point(580, 435);
             btnAction.Name = "btnAction";
-            btnAction.Size = new Size(280, 60);
+            btnAction.Size = new Size(280, 85);
             btnAction.TabIndex = 9;
             btnAction.Text = "Добавить оборудование";
             btnAction.UseVisualStyleBackColor = false;
@@ -167,7 +167,7 @@
             btnCancel.ForeColor = Color.FromArgb(46, 90, 136);
             btnCancel.Location = new Point(580, 540);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(280, 60);
+            btnCancel.Size = new Size(280, 78);
             btnCancel.TabIndex = 10;
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = false;

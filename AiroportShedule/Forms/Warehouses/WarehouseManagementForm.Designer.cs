@@ -97,7 +97,7 @@
             btnDeleteEquipment.ForeColor = Color.White;
             btnDeleteEquipment.Location = new Point(620, 10);
             btnDeleteEquipment.Name = "btnDeleteEquipment";
-            btnDeleteEquipment.Size = new Size(290, 50);
+            btnDeleteEquipment.Size = new Size(290, 92);
             btnDeleteEquipment.TabIndex = 2;
             btnDeleteEquipment.Text = "Удалить оборудование";
             btnDeleteEquipment.UseVisualStyleBackColor = false;
@@ -112,7 +112,7 @@
             btnEditEquipment.ForeColor = Color.White;
             btnEditEquipment.Location = new Point(320, 10);
             btnEditEquipment.Name = "btnEditEquipment";
-            btnEditEquipment.Size = new Size(290, 50);
+            btnEditEquipment.Size = new Size(290, 92);
             btnEditEquipment.TabIndex = 1;
             btnEditEquipment.Text = "Редактировать";
             btnEditEquipment.UseVisualStyleBackColor = false;
@@ -127,7 +127,7 @@
             btnAddEquipment.ForeColor = Color.White;
             btnAddEquipment.Location = new Point(20, 10);
             btnAddEquipment.Name = "btnAddEquipment";
-            btnAddEquipment.Size = new Size(290, 50);
+            btnAddEquipment.Size = new Size(290, 92);
             btnAddEquipment.TabIndex = 0;
             btnAddEquipment.Text = "Добавить оборудование";
             btnAddEquipment.UseVisualStyleBackColor = false;
@@ -191,7 +191,7 @@
             btnDeleteSupply.ForeColor = Color.White;
             btnDeleteSupply.Location = new Point(620, 10);
             btnDeleteSupply.Name = "btnDeleteSupply";
-            btnDeleteSupply.Size = new Size(290, 50);
+            btnDeleteSupply.Size = new Size(290, 91);
             btnDeleteSupply.TabIndex = 2;
             btnDeleteSupply.Text = "Удалить припас";
             btnDeleteSupply.UseVisualStyleBackColor = false;
@@ -206,7 +206,7 @@
             btnEditSupply.ForeColor = Color.White;
             btnEditSupply.Location = new Point(320, 10);
             btnEditSupply.Name = "btnEditSupply";
-            btnEditSupply.Size = new Size(290, 50);
+            btnEditSupply.Size = new Size(290, 91);
             btnEditSupply.TabIndex = 1;
             btnEditSupply.Text = "Редактировать";
             btnEditSupply.UseVisualStyleBackColor = false;
@@ -221,7 +221,7 @@
             btnAddSupply.ForeColor = Color.White;
             btnAddSupply.Location = new Point(20, 10);
             btnAddSupply.Name = "btnAddSupply";
-            btnAddSupply.Size = new Size(290, 50);
+            btnAddSupply.Size = new Size(290, 91);
             btnAddSupply.TabIndex = 0;
             btnAddSupply.Text = "Добавить припас";
             btnAddSupply.UseVisualStyleBackColor = false;

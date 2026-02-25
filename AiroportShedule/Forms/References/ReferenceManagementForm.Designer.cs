@@ -28,343 +28,349 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPageFlightCrew = new System.Windows.Forms.TabPage();
-            this.pnlFlightCrewButtons = new System.Windows.Forms.Panel();
-            this.btnDeleteFlightCrew = new System.Windows.Forms.Button();
-            this.btnEditFlightCrew = new System.Windows.Forms.Button();
-            this.btnAddFlightCrew = new System.Windows.Forms.Button();
-            this.dgvFlightCrew = new System.Windows.Forms.DataGridView();
-            this.lblListTitle = new System.Windows.Forms.Label();
-            this.tabPageSupportCrew = new System.Windows.Forms.TabPage();
-            this.pnlSupportCrewButtons = new System.Windows.Forms.Panel();
-            this.btnDeleteSupportCrew = new System.Windows.Forms.Button();
-            this.btnEditSupportCrew = new System.Windows.Forms.Button();
-            this.btnAddSupportCrew = new System.Windows.Forms.Button();
-            this.dgvSupportCrew = new System.Windows.Forms.DataGridView();
-            this.tabPageSingleList = new System.Windows.Forms.TabPage();
-            this.pnlSingleListButtons = new System.Windows.Forms.Panel();
-            this.btnDeleteSingle = new System.Windows.Forms.Button();
-            this.btnEditSingle = new System.Windows.Forms.Button();
-            this.btnAddSingle = new System.Windows.Forms.Button();
-            this.dgvSingleList = new System.Windows.Forms.DataGridView();
-            this.tabControl.SuspendLayout();
-            this.tabPageFlightCrew.SuspendLayout();
-            this.pnlFlightCrewButtons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFlightCrew)).BeginInit();
-            this.tabPageSupportCrew.SuspendLayout();
-            this.pnlSupportCrewButtons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupportCrew)).BeginInit();
-            this.tabPageSingleList.SuspendLayout();
-            this.pnlSingleListButtons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSingleList)).BeginInit();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            tabControl = new TabControl();
+            tabPageFlightCrew = new TabPage();
+            pnlFlightCrewButtons = new Panel();
+            btnDeleteFlightCrew = new Button();
+            btnEditFlightCrew = new Button();
+            btnAddFlightCrew = new Button();
+            dgvFlightCrew = new DataGridView();
+            tabPageSupportCrew = new TabPage();
+            pnlSupportCrewButtons = new Panel();
+            btnDeleteSupportCrew = new Button();
+            btnEditSupportCrew = new Button();
+            btnAddSupportCrew = new Button();
+            dgvSupportCrew = new DataGridView();
+            tabPageSingleList = new TabPage();
+            pnlSingleListButtons = new Panel();
+            btnDeleteSingle = new Button();
+            btnEditSingle = new Button();
+            btnAddSingle = new Button();
+            dgvSingleList = new DataGridView();
+            lblListTitle = new Label();
+            tabControl.SuspendLayout();
+            tabPageFlightCrew.SuspendLayout();
+            pnlFlightCrewButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvFlightCrew).BeginInit();
+            tabPageSupportCrew.SuspendLayout();
+            pnlSupportCrewButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvSupportCrew).BeginInit();
+            tabPageSingleList.SuspendLayout();
+            pnlSingleListButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvSingleList).BeginInit();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblTitle.Location = new System.Drawing.Point(30, 25);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(450, 46);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Справочник экипажей";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblTitle.ForeColor = Color.FromArgb(33, 37, 41);
+            lblTitle.Location = new Point(30, 25);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(430, 45);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Справочник экипажей";
             // 
             // tabControl
             // 
-            this.tabControl.Controls.Add(this.tabPageFlightCrew);
-            this.tabControl.Controls.Add(this.tabPageSupportCrew);
-            this.tabControl.Controls.Add(this.tabPageSingleList);
-            this.tabControl.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabControl.Location = new System.Drawing.Point(30, 90);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(940, 620);
-            this.tabControl.TabIndex = 1;
+            tabControl.Controls.Add(tabPageFlightCrew);
+            tabControl.Controls.Add(tabPageSupportCrew);
+            tabControl.Controls.Add(tabPageSingleList);
+            tabControl.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            tabControl.Location = new Point(30, 90);
+            tabControl.Name = "tabControl";
+            tabControl.SelectedIndex = 0;
+            tabControl.Size = new Size(940, 620);
+            tabControl.TabIndex = 1;
             // 
             // tabPageFlightCrew
             // 
-            this.tabPageFlightCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.tabPageFlightCrew.Controls.Add(this.pnlFlightCrewButtons);
-            this.tabPageFlightCrew.Controls.Add(this.dgvFlightCrew);
-            this.tabPageFlightCrew.Controls.Add(this.lblListTitle);
-            this.tabPageFlightCrew.Location = new System.Drawing.Point(4, 41);
-            this.tabPageFlightCrew.Name = "tabPageFlightCrew";
-            this.tabPageFlightCrew.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFlightCrew.Size = new System.Drawing.Size(932, 575);
-            this.tabPageFlightCrew.TabIndex = 0;
-            this.tabPageFlightCrew.Text = "Полётный персонал";
+            tabPageFlightCrew.BackColor = Color.FromArgb(248, 249, 250);
+            tabPageFlightCrew.Controls.Add(pnlFlightCrewButtons);
+            tabPageFlightCrew.Controls.Add(dgvFlightCrew);
+            tabPageFlightCrew.Location = new Point(4, 42);
+            tabPageFlightCrew.Name = "tabPageFlightCrew";
+            tabPageFlightCrew.Padding = new Padding(3);
+            tabPageFlightCrew.Size = new Size(932, 574);
+            tabPageFlightCrew.TabIndex = 0;
+            tabPageFlightCrew.Text = "Полётный персонал";
             // 
             // pnlFlightCrewButtons
             // 
-            this.pnlFlightCrewButtons.Controls.Add(this.btnDeleteFlightCrew);
-            this.pnlFlightCrewButtons.Controls.Add(this.btnEditFlightCrew);
-            this.pnlFlightCrewButtons.Controls.Add(this.btnAddFlightCrew);
-            this.pnlFlightCrewButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFlightCrewButtons.Location = new System.Drawing.Point(3, 457);
-            this.pnlFlightCrewButtons.Name = "pnlFlightCrewButtons";
-            this.pnlFlightCrewButtons.Size = new System.Drawing.Size(926, 115);
-            this.pnlFlightCrewButtons.TabIndex = 2;
+            pnlFlightCrewButtons.Controls.Add(btnDeleteFlightCrew);
+            pnlFlightCrewButtons.Controls.Add(btnEditFlightCrew);
+            pnlFlightCrewButtons.Controls.Add(btnAddFlightCrew);
+            pnlFlightCrewButtons.Dock = DockStyle.Bottom;
+            pnlFlightCrewButtons.Location = new Point(3, 456);
+            pnlFlightCrewButtons.Name = "pnlFlightCrewButtons";
+            pnlFlightCrewButtons.Size = new Size(926, 115);
+            pnlFlightCrewButtons.TabIndex = 2;
             // 
             // btnDeleteFlightCrew
             // 
-            this.btnDeleteFlightCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnDeleteFlightCrew.FlatAppearance.BorderSize = 0;
-            this.btnDeleteFlightCrew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteFlightCrew.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDeleteFlightCrew.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteFlightCrew.Location = new System.Drawing.Point(620, 10);
-            this.btnDeleteFlightCrew.Name = "btnDeleteFlightCrew";
-            this.btnDeleteFlightCrew.Size = new System.Drawing.Size(290, 50);
-            this.btnDeleteFlightCrew.TabIndex = 2;
-            this.btnDeleteFlightCrew.Text = "Удалить";
-            this.btnDeleteFlightCrew.UseVisualStyleBackColor = false;
+            btnDeleteFlightCrew.BackColor = Color.FromArgb(220, 38, 38);
+            btnDeleteFlightCrew.FlatAppearance.BorderSize = 0;
+            btnDeleteFlightCrew.FlatStyle = FlatStyle.Flat;
+            btnDeleteFlightCrew.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnDeleteFlightCrew.ForeColor = Color.White;
+            btnDeleteFlightCrew.Location = new Point(620, 10);
+            btnDeleteFlightCrew.Name = "btnDeleteFlightCrew";
+            btnDeleteFlightCrew.Size = new Size(290, 87);
+            btnDeleteFlightCrew.TabIndex = 2;
+            btnDeleteFlightCrew.Text = "Удалить";
+            btnDeleteFlightCrew.UseVisualStyleBackColor = false;
+            btnDeleteFlightCrew.Click += btnDeleteFlightCrew_Click;
             // 
             // btnEditFlightCrew
             // 
-            this.btnEditFlightCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnEditFlightCrew.FlatAppearance.BorderSize = 0;
-            this.btnEditFlightCrew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditFlightCrew.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnEditFlightCrew.ForeColor = System.Drawing.Color.White;
-            this.btnEditFlightCrew.Location = new System.Drawing.Point(320, 10);
-            this.btnEditFlightCrew.Name = "btnEditFlightCrew";
-            this.btnEditFlightCrew.Size = new System.Drawing.Size(290, 50);
-            this.btnEditFlightCrew.TabIndex = 1;
-            this.btnEditFlightCrew.Text = "Редактировать";
-            this.btnEditFlightCrew.UseVisualStyleBackColor = false;
+            btnEditFlightCrew.BackColor = Color.FromArgb(46, 90, 136);
+            btnEditFlightCrew.FlatAppearance.BorderSize = 0;
+            btnEditFlightCrew.FlatStyle = FlatStyle.Flat;
+            btnEditFlightCrew.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnEditFlightCrew.ForeColor = Color.White;
+            btnEditFlightCrew.Location = new Point(320, 10);
+            btnEditFlightCrew.Name = "btnEditFlightCrew";
+            btnEditFlightCrew.Size = new Size(290, 87);
+            btnEditFlightCrew.TabIndex = 1;
+            btnEditFlightCrew.Text = "Редактировать";
+            btnEditFlightCrew.UseVisualStyleBackColor = false;
+            btnEditFlightCrew.Click += btnEditFlightCrew_Click;
             // 
             // btnAddFlightCrew
             // 
-            this.btnAddFlightCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnAddFlightCrew.FlatAppearance.BorderSize = 0;
-            this.btnAddFlightCrew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFlightCrew.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAddFlightCrew.ForeColor = System.Drawing.Color.White;
-            this.btnAddFlightCrew.Location = new System.Drawing.Point(20, 10);
-            this.btnAddFlightCrew.Name = "btnAddFlightCrew";
-            this.btnAddFlightCrew.Size = new System.Drawing.Size(290, 50);
-            this.btnAddFlightCrew.TabIndex = 0;
-            this.btnAddFlightCrew.Text = "Добавить";
-            this.btnAddFlightCrew.UseVisualStyleBackColor = false;
+            btnAddFlightCrew.BackColor = Color.FromArgb(46, 90, 136);
+            btnAddFlightCrew.FlatAppearance.BorderSize = 0;
+            btnAddFlightCrew.FlatStyle = FlatStyle.Flat;
+            btnAddFlightCrew.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAddFlightCrew.ForeColor = Color.White;
+            btnAddFlightCrew.Location = new Point(20, 10);
+            btnAddFlightCrew.Name = "btnAddFlightCrew";
+            btnAddFlightCrew.Size = new Size(290, 87);
+            btnAddFlightCrew.TabIndex = 0;
+            btnAddFlightCrew.Text = "Добавить";
+            btnAddFlightCrew.UseVisualStyleBackColor = false;
+            btnAddFlightCrew.Click += btnAddFlightCrew_Click;
             // 
             // dgvFlightCrew
             // 
-            this.dgvFlightCrew.BackgroundColor = System.Drawing.Color.White;
-            this.dgvFlightCrew.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvFlightCrew.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvFlightCrew.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFlightCrew.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvFlightCrew.Location = new System.Drawing.Point(3, 64);
-            this.dgvFlightCrew.Name = "dgvFlightCrew";
-            this.dgvFlightCrew.RowHeadersWidth = 62;
-            this.dgvFlightCrew.RowTemplate.Height = 35;
-            this.dgvFlightCrew.Size = new System.Drawing.Size(926, 393);
-            this.dgvFlightCrew.TabIndex = 1;
-            // 
-            // lblListTitle
-            // 
-            this.lblListTitle.AutoSize = true;
-            this.lblListTitle.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblListTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblListTitle.Location = new System.Drawing.Point(20, 20);
-            this.lblListTitle.Name = "lblListTitle";
-            this.lblListTitle.Size = new System.Drawing.Size(270, 36);
-            this.lblListTitle.TabIndex = 0;
-            this.lblListTitle.Text = "Список персонала";
+            dgvFlightCrew.BackgroundColor = Color.White;
+            dgvFlightCrew.BorderStyle = BorderStyle.None;
+            dgvFlightCrew.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvFlightCrew.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvFlightCrew.Dock = DockStyle.Fill;
+            dgvFlightCrew.Location = new Point(3, 3);
+            dgvFlightCrew.Name = "dgvFlightCrew";
+            dgvFlightCrew.RowHeadersWidth = 62;
+            dgvFlightCrew.RowTemplate.Height = 35;
+            dgvFlightCrew.Size = new Size(926, 568);
+            dgvFlightCrew.TabIndex = 1;
+            dgvFlightCrew.CellContentClick += dgvFlightCrew_CellContentClick;
             // 
             // tabPageSupportCrew
             // 
-            this.tabPageSupportCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.tabPageSupportCrew.Controls.Add(this.pnlSupportCrewButtons);
-            this.tabPageSupportCrew.Controls.Add(this.dgvSupportCrew);
-            this.tabPageSupportCrew.Controls.Add(this.lblListTitle);
-            this.tabPageSupportCrew.Location = new System.Drawing.Point(4, 41);
-            this.tabPageSupportCrew.Name = "tabPageSupportCrew";
-            this.tabPageSupportCrew.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSupportCrew.Size = new System.Drawing.Size(932, 575);
-            this.tabPageSupportCrew.TabIndex = 1;
-            this.tabPageSupportCrew.Text = "Обслуживающий персонал";
+            tabPageSupportCrew.BackColor = Color.FromArgb(248, 249, 250);
+            tabPageSupportCrew.Controls.Add(pnlSupportCrewButtons);
+            tabPageSupportCrew.Controls.Add(dgvSupportCrew);
+            tabPageSupportCrew.Location = new Point(4, 42);
+            tabPageSupportCrew.Name = "tabPageSupportCrew";
+            tabPageSupportCrew.Padding = new Padding(3);
+            tabPageSupportCrew.Size = new Size(932, 574);
+            tabPageSupportCrew.TabIndex = 1;
+            tabPageSupportCrew.Text = "Обслуживающий персонал";
             // 
             // pnlSupportCrewButtons
             // 
-            this.pnlSupportCrewButtons.Controls.Add(this.btnDeleteSupportCrew);
-            this.pnlSupportCrewButtons.Controls.Add(this.btnEditSupportCrew);
-            this.pnlSupportCrewButtons.Controls.Add(this.btnAddSupportCrew);
-            this.pnlSupportCrewButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlSupportCrewButtons.Location = new System.Drawing.Point(3, 457);
-            this.pnlSupportCrewButtons.Name = "pnlSupportCrewButtons";
-            this.pnlSupportCrewButtons.Size = new System.Drawing.Size(926, 115);
-            this.pnlSupportCrewButtons.TabIndex = 3;
+            pnlSupportCrewButtons.Controls.Add(btnDeleteSupportCrew);
+            pnlSupportCrewButtons.Controls.Add(btnEditSupportCrew);
+            pnlSupportCrewButtons.Controls.Add(btnAddSupportCrew);
+            pnlSupportCrewButtons.Dock = DockStyle.Bottom;
+            pnlSupportCrewButtons.Location = new Point(3, 456);
+            pnlSupportCrewButtons.Name = "pnlSupportCrewButtons";
+            pnlSupportCrewButtons.Size = new Size(926, 115);
+            pnlSupportCrewButtons.TabIndex = 3;
             // 
             // btnDeleteSupportCrew
             // 
-            this.btnDeleteSupportCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnDeleteSupportCrew.FlatAppearance.BorderSize = 0;
-            this.btnDeleteSupportCrew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteSupportCrew.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDeleteSupportCrew.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteSupportCrew.Location = new System.Drawing.Point(620, 10);
-            this.btnDeleteSupportCrew.Name = "btnDeleteSupportCrew";
-            this.btnDeleteSupportCrew.Size = new System.Drawing.Size(290, 50);
-            this.btnDeleteSupportCrew.TabIndex = 2;
-            this.btnDeleteSupportCrew.Text = "Удалить";
-            this.btnDeleteSupportCrew.UseVisualStyleBackColor = false;
+            btnDeleteSupportCrew.BackColor = Color.FromArgb(220, 38, 38);
+            btnDeleteSupportCrew.FlatAppearance.BorderSize = 0;
+            btnDeleteSupportCrew.FlatStyle = FlatStyle.Flat;
+            btnDeleteSupportCrew.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnDeleteSupportCrew.ForeColor = Color.White;
+            btnDeleteSupportCrew.Location = new Point(620, 10);
+            btnDeleteSupportCrew.Name = "btnDeleteSupportCrew";
+            btnDeleteSupportCrew.Size = new Size(290, 88);
+            btnDeleteSupportCrew.TabIndex = 2;
+            btnDeleteSupportCrew.Text = "Удалить";
+            btnDeleteSupportCrew.UseVisualStyleBackColor = false;
+            btnDeleteSupportCrew.Click += btnDeleteSupportCrew_Click;
             // 
             // btnEditSupportCrew
             // 
-            this.btnEditSupportCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnEditSupportCrew.FlatAppearance.BorderSize = 0;
-            this.btnEditSupportCrew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditSupportCrew.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnEditSupportCrew.ForeColor = System.Drawing.Color.White;
-            this.btnEditSupportCrew.Location = new System.Drawing.Point(320, 10);
-            this.btnEditSupportCrew.Name = "btnEditSupportCrew";
-            this.btnEditSupportCrew.Size = new System.Drawing.Size(290, 50);
-            this.btnEditSupportCrew.TabIndex = 1;
-            this.btnEditSupportCrew.Text = "Редактировать";
-            this.btnEditSupportCrew.UseVisualStyleBackColor = false;
+            btnEditSupportCrew.BackColor = Color.FromArgb(46, 90, 136);
+            btnEditSupportCrew.FlatAppearance.BorderSize = 0;
+            btnEditSupportCrew.FlatStyle = FlatStyle.Flat;
+            btnEditSupportCrew.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnEditSupportCrew.ForeColor = Color.White;
+            btnEditSupportCrew.Location = new Point(320, 10);
+            btnEditSupportCrew.Name = "btnEditSupportCrew";
+            btnEditSupportCrew.Size = new Size(290, 88);
+            btnEditSupportCrew.TabIndex = 1;
+            btnEditSupportCrew.Text = "Редактировать";
+            btnEditSupportCrew.UseVisualStyleBackColor = false;
+            btnEditSupportCrew.Click += btnEditSupportCrew_Click;
             // 
             // btnAddSupportCrew
             // 
-            this.btnAddSupportCrew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnAddSupportCrew.FlatAppearance.BorderSize = 0;
-            this.btnAddSupportCrew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddSupportCrew.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAddSupportCrew.ForeColor = System.Drawing.Color.White;
-            this.btnAddSupportCrew.Location = new System.Drawing.Point(20, 10);
-            this.btnAddSupportCrew.Name = "btnAddSupportCrew";
-            this.btnAddSupportCrew.Size = new System.Drawing.Size(290, 50);
-            this.btnAddSupportCrew.TabIndex = 0;
-            this.btnAddSupportCrew.Text = "Добавить";
-            this.btnAddSupportCrew.UseVisualStyleBackColor = false;
+            btnAddSupportCrew.BackColor = Color.FromArgb(46, 90, 136);
+            btnAddSupportCrew.FlatAppearance.BorderSize = 0;
+            btnAddSupportCrew.FlatStyle = FlatStyle.Flat;
+            btnAddSupportCrew.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAddSupportCrew.ForeColor = Color.White;
+            btnAddSupportCrew.Location = new Point(20, 10);
+            btnAddSupportCrew.Name = "btnAddSupportCrew";
+            btnAddSupportCrew.Size = new Size(290, 88);
+            btnAddSupportCrew.TabIndex = 0;
+            btnAddSupportCrew.Text = "Добавить";
+            btnAddSupportCrew.UseVisualStyleBackColor = false;
+            btnAddSupportCrew.Click += btnAddSupportCrew_Click;
             // 
             // dgvSupportCrew
             // 
-            this.dgvSupportCrew.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSupportCrew.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvSupportCrew.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvSupportCrew.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSupportCrew.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSupportCrew.Location = new System.Drawing.Point(3, 64);
-            this.dgvSupportCrew.Name = "dgvSupportCrew";
-            this.dgvSupportCrew.RowHeadersWidth = 62;
-            this.dgvSupportCrew.RowTemplate.Height = 35;
-            this.dgvSupportCrew.Size = new System.Drawing.Size(926, 393);
-            this.dgvSupportCrew.TabIndex = 2;
+            dgvSupportCrew.BackgroundColor = Color.White;
+            dgvSupportCrew.BorderStyle = BorderStyle.None;
+            dgvSupportCrew.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvSupportCrew.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSupportCrew.Dock = DockStyle.Fill;
+            dgvSupportCrew.Location = new Point(3, 3);
+            dgvSupportCrew.Name = "dgvSupportCrew";
+            dgvSupportCrew.RowHeadersWidth = 62;
+            dgvSupportCrew.RowTemplate.Height = 35;
+            dgvSupportCrew.Size = new Size(926, 568);
+            dgvSupportCrew.TabIndex = 2;
             // 
             // tabPageSingleList
             // 
-            this.tabPageSingleList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.tabPageSingleList.Controls.Add(this.pnlSingleListButtons);
-            this.tabPageSingleList.Controls.Add(this.dgvSingleList);
-            this.tabPageSingleList.Controls.Add(this.lblListTitle);
-            this.tabPageSingleList.Location = new System.Drawing.Point(4, 41);
-            this.tabPageSingleList.Name = "tabPageSingleList";
-            this.tabPageSingleList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSingleList.Size = new System.Drawing.Size(932, 575);
-            this.tabPageSingleList.TabIndex = 2;
-            this.tabPageSingleList.Text = "Ангары";
+            tabPageSingleList.BackColor = Color.FromArgb(248, 249, 250);
+            tabPageSingleList.Controls.Add(pnlSingleListButtons);
+            tabPageSingleList.Controls.Add(dgvSingleList);
+            tabPageSingleList.Controls.Add(lblListTitle);
+            tabPageSingleList.Location = new Point(4, 42);
+            tabPageSingleList.Name = "tabPageSingleList";
+            tabPageSingleList.Padding = new Padding(3);
+            tabPageSingleList.Size = new Size(932, 574);
+            tabPageSingleList.TabIndex = 2;
+            tabPageSingleList.Text = "Ангары";
             // 
             // pnlSingleListButtons
             // 
-            this.pnlSingleListButtons.Controls.Add(this.btnDeleteSingle);
-            this.pnlSingleListButtons.Controls.Add(this.btnEditSingle);
-            this.pnlSingleListButtons.Controls.Add(this.btnAddSingle);
-            this.pnlSingleListButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlSingleListButtons.Location = new System.Drawing.Point(3, 457);
-            this.pnlSingleListButtons.Name = "pnlSingleListButtons";
-            this.pnlSingleListButtons.Size = new System.Drawing.Size(926, 115);
-            this.pnlSingleListButtons.TabIndex = 3;
+            pnlSingleListButtons.Controls.Add(btnDeleteSingle);
+            pnlSingleListButtons.Controls.Add(btnEditSingle);
+            pnlSingleListButtons.Controls.Add(btnAddSingle);
+            pnlSingleListButtons.Dock = DockStyle.Bottom;
+            pnlSingleListButtons.Location = new Point(3, 456);
+            pnlSingleListButtons.Name = "pnlSingleListButtons";
+            pnlSingleListButtons.Size = new Size(926, 115);
+            pnlSingleListButtons.TabIndex = 3;
             // 
             // btnDeleteSingle
             // 
-            this.btnDeleteSingle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnDeleteSingle.FlatAppearance.BorderSize = 0;
-            this.btnDeleteSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteSingle.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDeleteSingle.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteSingle.Location = new System.Drawing.Point(620, 10);
-            this.btnDeleteSingle.Name = "btnDeleteSingle";
-            this.btnDeleteSingle.Size = new System.Drawing.Size(290, 50);
-            this.btnDeleteSingle.TabIndex = 2;
-            this.btnDeleteSingle.Text = "Удалить";
-            this.btnDeleteSingle.UseVisualStyleBackColor = false;
+            btnDeleteSingle.BackColor = Color.FromArgb(220, 38, 38);
+            btnDeleteSingle.FlatAppearance.BorderSize = 0;
+            btnDeleteSingle.FlatStyle = FlatStyle.Flat;
+            btnDeleteSingle.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnDeleteSingle.ForeColor = Color.White;
+            btnDeleteSingle.Location = new Point(620, 10);
+            btnDeleteSingle.Name = "btnDeleteSingle";
+            btnDeleteSingle.Size = new Size(290, 89);
+            btnDeleteSingle.TabIndex = 2;
+            btnDeleteSingle.Text = "Удалить";
+            btnDeleteSingle.UseVisualStyleBackColor = false;
+            btnDeleteSingle.Click += btnDeleteHangar_Click;
             // 
             // btnEditSingle
             // 
-            this.btnEditSingle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnEditSingle.FlatAppearance.BorderSize = 0;
-            this.btnEditSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditSingle.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnEditSingle.ForeColor = System.Drawing.Color.White;
-            this.btnEditSingle.Location = new System.Drawing.Point(320, 10);
-            this.btnEditSingle.Name = "btnEditSingle";
-            this.btnEditSingle.Size = new System.Drawing.Size(290, 50);
-            this.btnEditSingle.TabIndex = 1;
-            this.btnEditSingle.Text = "Редактировать";
-            this.btnEditSingle.UseVisualStyleBackColor = false;
+            btnEditSingle.BackColor = Color.FromArgb(46, 90, 136);
+            btnEditSingle.FlatAppearance.BorderSize = 0;
+            btnEditSingle.FlatStyle = FlatStyle.Flat;
+            btnEditSingle.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnEditSingle.ForeColor = Color.White;
+            btnEditSingle.Location = new Point(320, 10);
+            btnEditSingle.Name = "btnEditSingle";
+            btnEditSingle.Size = new Size(290, 89);
+            btnEditSingle.TabIndex = 1;
+            btnEditSingle.Text = "Редактировать";
+            btnEditSingle.UseVisualStyleBackColor = false;
+            btnEditSingle.Click += btnEditHangar_Click;
             // 
             // btnAddSingle
             // 
-            this.btnAddSingle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnAddSingle.FlatAppearance.BorderSize = 0;
-            this.btnAddSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddSingle.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAddSingle.ForeColor = System.Drawing.Color.White;
-            this.btnAddSingle.Location = new System.Drawing.Point(20, 10);
-            this.btnAddSingle.Name = "btnAddSingle";
-            this.btnAddSingle.Size = new System.Drawing.Size(290, 50);
-            this.btnAddSingle.TabIndex = 0;
-            this.btnAddSingle.Text = "Добавить";
-            this.btnAddSingle.UseVisualStyleBackColor = false;
+            btnAddSingle.BackColor = Color.FromArgb(46, 90, 136);
+            btnAddSingle.FlatAppearance.BorderSize = 0;
+            btnAddSingle.FlatStyle = FlatStyle.Flat;
+            btnAddSingle.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAddSingle.ForeColor = Color.White;
+            btnAddSingle.Location = new Point(20, 10);
+            btnAddSingle.Name = "btnAddSingle";
+            btnAddSingle.Size = new Size(290, 89);
+            btnAddSingle.TabIndex = 0;
+            btnAddSingle.Text = "Добавить";
+            btnAddSingle.UseVisualStyleBackColor = false;
+            btnAddSingle.Click += btnAddHangar_Click;
             // 
             // dgvSingleList
             // 
-            this.dgvSingleList.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSingleList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvSingleList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvSingleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSingleList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSingleList.Location = new System.Drawing.Point(3, 64);
-            this.dgvSingleList.Name = "dgvSingleList";
-            this.dgvSingleList.RowHeadersWidth = 62;
-            this.dgvSingleList.RowTemplate.Height = 35;
-            this.dgvSingleList.Size = new System.Drawing.Size(926, 393);
-            this.dgvSingleList.TabIndex = 2;
+            dgvSingleList.BackgroundColor = Color.White;
+            dgvSingleList.BorderStyle = BorderStyle.None;
+            dgvSingleList.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvSingleList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSingleList.Dock = DockStyle.Fill;
+            dgvSingleList.Location = new Point(3, 3);
+            dgvSingleList.Name = "dgvSingleList";
+            dgvSingleList.RowHeadersWidth = 62;
+            dgvSingleList.RowTemplate.Height = 35;
+            dgvSingleList.Size = new Size(926, 568);
+            dgvSingleList.TabIndex = 2;
+            // 
+            // lblListTitle
+            // 
+            lblListTitle.AutoSize = true;
+            lblListTitle.Font = new Font("Times New Roman", 16F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblListTitle.ForeColor = Color.FromArgb(33, 37, 41);
+            lblListTitle.Location = new Point(20, 20);
+            lblListTitle.Name = "lblListTitle";
+            lblListTitle.Size = new Size(278, 36);
+            lblListTitle.TabIndex = 0;
+            lblListTitle.Text = "Список персонала";
             // 
             // ReferenceManagementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1000, 740);
-            this.Controls.Add(this.tabControl);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "ReferenceManagementForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Справочник экипажей — Аэропорт";
-            this.tabControl.ResumeLayout(false);
-            this.tabPageFlightCrew.ResumeLayout(false);
-            this.tabPageFlightCrew.PerformLayout();
-            this.pnlFlightCrewButtons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFlightCrew)).EndInit();
-            this.tabPageSupportCrew.ResumeLayout(false);
-            this.tabPageSupportCrew.PerformLayout();
-            this.pnlSupportCrewButtons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSupportCrew)).EndInit();
-            this.tabPageSingleList.ResumeLayout(false);
-            this.tabPageSingleList.PerformLayout();
-            this.pnlSingleListButtons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSingleList)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(15F, 33F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(248, 249, 250);
+            ClientSize = new Size(1000, 740);
+            Controls.Add(tabControl);
+            Controls.Add(lblTitle);
+            Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "ReferenceManagementForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Справочник экипажей — Аэропорт";
+            tabControl.ResumeLayout(false);
+            tabPageFlightCrew.ResumeLayout(false);
+            pnlFlightCrewButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvFlightCrew).EndInit();
+            tabPageSupportCrew.ResumeLayout(false);
+            pnlSupportCrewButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvSupportCrew).EndInit();
+            tabPageSingleList.ResumeLayout(false);
+            tabPageSingleList.PerformLayout();
+            pnlSingleListButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvSingleList).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

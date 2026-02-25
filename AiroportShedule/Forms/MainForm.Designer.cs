@@ -50,31 +50,31 @@
             stsAirport = new ToolStripStatusLabel();
             stsSeparator2 = new ToolStripStatusLabel();
             stsTime = new ToolStripStatusLabel();
+            pnlScheduleSection = new Panel();
+            lblFlightsScheduleTitle = new Label();
+            dgvFlightsSchedule = new Zuby.ADGV.AdvancedDataGridView();
+            pnlCrudButtons = new Panel();
+            btnAddFlight = new Button();
+            btnEditFlight = new Button();
+            btnDeleteFlight = new Button();
             tableLayoutPanelMain = new TableLayoutPanel();
-            pnlAirportSection = new Panel();
-            pnlAirportControls = new Panel();
-            btnAllowLanding = new Button();
-            btnAllowTakeoff = new Button();
-            btnSuppliesManagement = new Button();
-            btnMaintenance = new Button();
             pnlAirportMapCanvas = new Panel();
             lblAirportMapTitle = new Label();
-            pnlScheduleSection = new Panel();
-            pnlCrudButtons = new Panel();
-            btnDeleteFlight = new Button();
-            btnEditFlight = new Button();
-            btnAddFlight = new Button();
-            dgvFlightsSchedule = new Zuby.ADGV.AdvancedDataGridView();
-            lblFlightsScheduleTitle = new Label();
+            pnlAirportControls = new Panel();
+            btnMaintenance = new Button();
+            btnSuppliesManagement = new Button();
+            btnAllowTakeoff = new Button();
+            btnAllowLanding = new Button();
+            pnlAirportSection = new Panel();
             menuMain.SuspendLayout();
             statusMain.SuspendLayout();
-            tableLayoutPanelMain.SuspendLayout();
-            pnlAirportSection.SuspendLayout();
-            pnlAirportControls.SuspendLayout();
-            pnlAirportMapCanvas.SuspendLayout();
             pnlScheduleSection.SuspendLayout();
-            pnlCrudButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvFlightsSchedule).BeginInit();
+            pnlCrudButtons.SuspendLayout();
+            tableLayoutPanelMain.SuspendLayout();
+            pnlAirportMapCanvas.SuspendLayout();
+            pnlAirportControls.SuspendLayout();
+            pnlAirportSection.SuspendLayout();
             SuspendLayout();
             // 
             // menuMain
@@ -255,134 +255,6 @@
             stsTime.Size = new Size(115, 33);
             stsTime.Text = "12:34:56";
             // 
-            // tableLayoutPanelMain
-            // 
-            tableLayoutPanelMain.ColumnCount = 2;
-            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
-            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tableLayoutPanelMain.Controls.Add(pnlAirportSection, 0, 0);
-            tableLayoutPanelMain.Controls.Add(pnlScheduleSection, 1, 0);
-            tableLayoutPanelMain.Dock = DockStyle.Fill;
-            tableLayoutPanelMain.Location = new Point(0, 42);
-            tableLayoutPanelMain.Name = "tableLayoutPanelMain";
-            tableLayoutPanelMain.Padding = new Padding(15);
-            tableLayoutPanelMain.RowCount = 1;
-            tableLayoutPanelMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanelMain.Size = new Size(1496, 768);
-            tableLayoutPanelMain.TabIndex = 2;
-            // 
-            // pnlAirportSection
-            // 
-            pnlAirportSection.BackColor = Color.White;
-            pnlAirportSection.BorderStyle = BorderStyle.FixedSingle;
-            pnlAirportSection.Controls.Add(pnlAirportControls);
-            pnlAirportSection.Controls.Add(pnlAirportMapCanvas);
-            pnlAirportSection.Dock = DockStyle.Fill;
-            pnlAirportSection.Location = new Point(18, 18);
-            pnlAirportSection.Margin = new Padding(3, 3, 10, 3);
-            pnlAirportSection.Name = "pnlAirportSection";
-            pnlAirportSection.Padding = new Padding(20);
-            pnlAirportSection.Size = new Size(866, 732);
-            pnlAirportSection.TabIndex = 0;
-            // 
-            // pnlAirportControls
-            // 
-            pnlAirportControls.Controls.Add(btnAllowLanding);
-            pnlAirportControls.Controls.Add(btnAllowTakeoff);
-            pnlAirportControls.Controls.Add(btnSuppliesManagement);
-            pnlAirportControls.Controls.Add(btnMaintenance);
-            pnlAirportControls.Dock = DockStyle.Bottom;
-            pnlAirportControls.Location = new Point(20, 542);
-            pnlAirportControls.Name = "pnlAirportControls";
-            pnlAirportControls.Size = new Size(824, 168);
-            pnlAirportControls.TabIndex = 1;
-            // 
-            // btnAllowLanding
-            // 
-            btnAllowLanding.BackColor = Color.FromArgb(46, 90, 136);
-            btnAllowLanding.FlatAppearance.BorderSize = 0;
-            btnAllowLanding.FlatStyle = FlatStyle.Flat;
-            btnAllowLanding.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnAllowLanding.ForeColor = Color.White;
-            btnAllowLanding.Location = new Point(440, 90);
-            btnAllowLanding.Margin = new Padding(10);
-            btnAllowLanding.Name = "btnAllowLanding";
-            btnAllowLanding.Size = new Size(375, 68);
-            btnAllowLanding.TabIndex = 3;
-            btnAllowLanding.Text = "Разрешить посадку";
-            btnAllowLanding.UseVisualStyleBackColor = false;
-            btnAllowLanding.Click += btnAllowLanding_Click;
-            // 
-            // btnAllowTakeoff
-            // 
-            btnAllowTakeoff.BackColor = Color.FromArgb(46, 90, 136);
-            btnAllowTakeoff.FlatAppearance.BorderSize = 0;
-            btnAllowTakeoff.FlatStyle = FlatStyle.Flat;
-            btnAllowTakeoff.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnAllowTakeoff.ForeColor = Color.White;
-            btnAllowTakeoff.Location = new Point(440, 12);
-            btnAllowTakeoff.Margin = new Padding(10);
-            btnAllowTakeoff.Name = "btnAllowTakeoff";
-            btnAllowTakeoff.Size = new Size(375, 68);
-            btnAllowTakeoff.TabIndex = 2;
-            btnAllowTakeoff.Text = "Разрешить взлёт";
-            btnAllowTakeoff.UseVisualStyleBackColor = false;
-            btnAllowTakeoff.Click += btnAllowTakeoff_Click;
-            // 
-            // btnSuppliesManagement
-            // 
-            btnSuppliesManagement.BackColor = Color.FromArgb(46, 90, 136);
-            btnSuppliesManagement.FlatAppearance.BorderSize = 0;
-            btnSuppliesManagement.FlatStyle = FlatStyle.Flat;
-            btnSuppliesManagement.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnSuppliesManagement.ForeColor = Color.White;
-            btnSuppliesManagement.Location = new Point(12, 90);
-            btnSuppliesManagement.Margin = new Padding(10);
-            btnSuppliesManagement.Name = "btnSuppliesManagement";
-            btnSuppliesManagement.Size = new Size(375, 68);
-            btnSuppliesManagement.TabIndex = 1;
-            btnSuppliesManagement.Text = "Управление припасами";
-            btnSuppliesManagement.UseVisualStyleBackColor = false;
-            btnSuppliesManagement.Click += btnSuppliesManagement_Click;
-            // 
-            // btnMaintenance
-            // 
-            btnMaintenance.BackColor = Color.FromArgb(46, 90, 136);
-            btnMaintenance.FlatAppearance.BorderSize = 0;
-            btnMaintenance.FlatStyle = FlatStyle.Flat;
-            btnMaintenance.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnMaintenance.ForeColor = Color.White;
-            btnMaintenance.Location = new Point(12, 12);
-            btnMaintenance.Margin = new Padding(10);
-            btnMaintenance.Name = "btnMaintenance";
-            btnMaintenance.Size = new Size(375, 68);
-            btnMaintenance.TabIndex = 0;
-            btnMaintenance.Text = "Техническое обслуживание";
-            btnMaintenance.UseVisualStyleBackColor = false;
-            btnMaintenance.Click += btnMaintenance_Click;
-            // 
-            // pnlAirportMapCanvas
-            // 
-            pnlAirportMapCanvas.BackColor = Color.FromArgb(248, 249, 250);
-            pnlAirportMapCanvas.Controls.Add(lblAirportMapTitle);
-            pnlAirportMapCanvas.Dock = DockStyle.Fill;
-            pnlAirportMapCanvas.Location = new Point(20, 20);
-            pnlAirportMapCanvas.Name = "pnlAirportMapCanvas";
-            pnlAirportMapCanvas.Size = new Size(824, 690);
-            pnlAirportMapCanvas.TabIndex = 0;
-            // 
-            // lblAirportMapTitle
-            // 
-            lblAirportMapTitle.AutoSize = true;
-            lblAirportMapTitle.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            lblAirportMapTitle.ForeColor = Color.FromArgb(33, 37, 41);
-            lblAirportMapTitle.Location = new Point(25, 25);
-            lblAirportMapTitle.Margin = new Padding(4, 0, 4, 0);
-            lblAirportMapTitle.Name = "lblAirportMapTitle";
-            lblAirportMapTitle.Size = new Size(637, 41);
-            lblAirportMapTitle.TabIndex = 0;
-            lblAirportMapTitle.Text = "Схема аэропорта в реальном времени";
-            // 
             // pnlScheduleSection
             // 
             pnlScheduleSection.BackColor = Color.White;
@@ -398,64 +270,17 @@
             pnlScheduleSection.Size = new Size(574, 732);
             pnlScheduleSection.TabIndex = 1;
             // 
-            // pnlCrudButtons
+            // lblFlightsScheduleTitle
             // 
-            pnlCrudButtons.Controls.Add(btnDeleteFlight);
-            pnlCrudButtons.Controls.Add(btnEditFlight);
-            pnlCrudButtons.Controls.Add(btnAddFlight);
-            pnlCrudButtons.Dock = DockStyle.Bottom;
-            pnlCrudButtons.Location = new Point(25, 592);
-            pnlCrudButtons.Name = "pnlCrudButtons";
-            pnlCrudButtons.Size = new Size(522, 118);
-            pnlCrudButtons.TabIndex = 2;
-            // 
-            // btnDeleteFlight
-            // 
-            btnDeleteFlight.BackColor = Color.FromArgb(220, 38, 38);
-            btnDeleteFlight.FlatAppearance.BorderSize = 0;
-            btnDeleteFlight.FlatStyle = FlatStyle.Flat;
-            btnDeleteFlight.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnDeleteFlight.ForeColor = Color.White;
-            btnDeleteFlight.Location = new Point(0, 80);
-            btnDeleteFlight.Margin = new Padding(10, 5, 10, 5);
-            btnDeleteFlight.Name = "btnDeleteFlight";
-            btnDeleteFlight.Size = new Size(530, 38);
-            btnDeleteFlight.TabIndex = 2;
-            btnDeleteFlight.Text = "Удалить рейс";
-            btnDeleteFlight.UseVisualStyleBackColor = false;
-            btnDeleteFlight.Click += btnDeleteFlight_Click;
-            // 
-            // btnEditFlight
-            // 
-            btnEditFlight.BackColor = Color.FromArgb(46, 90, 136);
-            btnEditFlight.FlatAppearance.BorderSize = 0;
-            btnEditFlight.FlatStyle = FlatStyle.Flat;
-            btnEditFlight.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnEditFlight.ForeColor = Color.White;
-            btnEditFlight.Location = new Point(0, 41);
-            btnEditFlight.Margin = new Padding(10, 5, 10, 5);
-            btnEditFlight.Name = "btnEditFlight";
-            btnEditFlight.Size = new Size(530, 38);
-            btnEditFlight.TabIndex = 1;
-            btnEditFlight.Text = "Редактировать рейс";
-            btnEditFlight.UseVisualStyleBackColor = false;
-            btnEditFlight.Click += btnEditFlight_Click;
-            // 
-            // btnAddFlight
-            // 
-            btnAddFlight.BackColor = Color.FromArgb(46, 90, 136);
-            btnAddFlight.FlatAppearance.BorderSize = 0;
-            btnAddFlight.FlatStyle = FlatStyle.Flat;
-            btnAddFlight.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            btnAddFlight.ForeColor = Color.White;
-            btnAddFlight.Location = new Point(0, 0);
-            btnAddFlight.Margin = new Padding(10, 5, 10, 5);
-            btnAddFlight.Name = "btnAddFlight";
-            btnAddFlight.Size = new Size(530, 38);
-            btnAddFlight.TabIndex = 0;
-            btnAddFlight.Text = "Добавить рейс";
-            btnAddFlight.UseVisualStyleBackColor = false;
-            btnAddFlight.Click += btnAddFlight_Click;
+            lblFlightsScheduleTitle.AutoSize = true;
+            lblFlightsScheduleTitle.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblFlightsScheduleTitle.ForeColor = Color.FromArgb(33, 37, 41);
+            lblFlightsScheduleTitle.Location = new Point(15, 15);
+            lblFlightsScheduleTitle.Margin = new Padding(4, 0, 4, 12);
+            lblFlightsScheduleTitle.Name = "lblFlightsScheduleTitle";
+            lblFlightsScheduleTitle.Size = new Size(327, 41);
+            lblFlightsScheduleTitle.TabIndex = 0;
+            lblFlightsScheduleTitle.Text = "Расписание рейсов";
             // 
             // dgvFlightsSchedule
             // 
@@ -495,17 +320,192 @@
             dgvFlightsSchedule.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             dgvFlightsSchedule.TabIndex = 0;
             // 
-            // lblFlightsScheduleTitle
+            // pnlCrudButtons
             // 
-            lblFlightsScheduleTitle.AutoSize = true;
-            lblFlightsScheduleTitle.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            lblFlightsScheduleTitle.ForeColor = Color.FromArgb(33, 37, 41);
-            lblFlightsScheduleTitle.Location = new Point(15, 15);
-            lblFlightsScheduleTitle.Margin = new Padding(4, 0, 4, 12);
-            lblFlightsScheduleTitle.Name = "lblFlightsScheduleTitle";
-            lblFlightsScheduleTitle.Size = new Size(327, 41);
-            lblFlightsScheduleTitle.TabIndex = 0;
-            lblFlightsScheduleTitle.Text = "Расписание рейсов";
+            pnlCrudButtons.Controls.Add(btnDeleteFlight);
+            pnlCrudButtons.Controls.Add(btnEditFlight);
+            pnlCrudButtons.Controls.Add(btnAddFlight);
+            pnlCrudButtons.Dock = DockStyle.Bottom;
+            pnlCrudButtons.Location = new Point(25, 592);
+            pnlCrudButtons.Name = "pnlCrudButtons";
+            pnlCrudButtons.Size = new Size(522, 118);
+            pnlCrudButtons.TabIndex = 2;
+            // 
+            // btnAddFlight
+            // 
+            btnAddFlight.BackColor = Color.FromArgb(46, 90, 136);
+            btnAddFlight.FlatAppearance.BorderSize = 0;
+            btnAddFlight.FlatStyle = FlatStyle.Flat;
+            btnAddFlight.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAddFlight.ForeColor = Color.White;
+            btnAddFlight.Location = new Point(0, 0);
+            btnAddFlight.Margin = new Padding(10, 5, 10, 5);
+            btnAddFlight.Name = "btnAddFlight";
+            btnAddFlight.Size = new Size(530, 38);
+            btnAddFlight.TabIndex = 0;
+            btnAddFlight.Text = "Добавить рейс";
+            btnAddFlight.UseVisualStyleBackColor = false;
+            btnAddFlight.Click += btnAddFlight_Click;
+            // 
+            // btnEditFlight
+            // 
+            btnEditFlight.BackColor = Color.FromArgb(46, 90, 136);
+            btnEditFlight.FlatAppearance.BorderSize = 0;
+            btnEditFlight.FlatStyle = FlatStyle.Flat;
+            btnEditFlight.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnEditFlight.ForeColor = Color.White;
+            btnEditFlight.Location = new Point(0, 41);
+            btnEditFlight.Margin = new Padding(10, 5, 10, 5);
+            btnEditFlight.Name = "btnEditFlight";
+            btnEditFlight.Size = new Size(530, 38);
+            btnEditFlight.TabIndex = 1;
+            btnEditFlight.Text = "Редактировать рейс";
+            btnEditFlight.UseVisualStyleBackColor = false;
+            btnEditFlight.Click += btnEditFlight_Click;
+            // 
+            // btnDeleteFlight
+            // 
+            btnDeleteFlight.BackColor = Color.FromArgb(220, 38, 38);
+            btnDeleteFlight.FlatAppearance.BorderSize = 0;
+            btnDeleteFlight.FlatStyle = FlatStyle.Flat;
+            btnDeleteFlight.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnDeleteFlight.ForeColor = Color.White;
+            btnDeleteFlight.Location = new Point(0, 80);
+            btnDeleteFlight.Margin = new Padding(10, 5, 10, 5);
+            btnDeleteFlight.Name = "btnDeleteFlight";
+            btnDeleteFlight.Size = new Size(530, 38);
+            btnDeleteFlight.TabIndex = 2;
+            btnDeleteFlight.Text = "Удалить рейс";
+            btnDeleteFlight.UseVisualStyleBackColor = false;
+            btnDeleteFlight.Click += btnDeleteFlight_Click;
+            // 
+            // tableLayoutPanelMain
+            // 
+            tableLayoutPanelMain.ColumnCount = 2;
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanelMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            tableLayoutPanelMain.Controls.Add(pnlAirportSection, 0, 0);
+            tableLayoutPanelMain.Controls.Add(pnlScheduleSection, 1, 0);
+            tableLayoutPanelMain.Dock = DockStyle.Fill;
+            tableLayoutPanelMain.Location = new Point(0, 42);
+            tableLayoutPanelMain.Name = "tableLayoutPanelMain";
+            tableLayoutPanelMain.Padding = new Padding(15);
+            tableLayoutPanelMain.RowCount = 1;
+            tableLayoutPanelMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanelMain.Size = new Size(1496, 768);
+            tableLayoutPanelMain.TabIndex = 2;
+            // 
+            // pnlAirportMapCanvas
+            // 
+            pnlAirportMapCanvas.BackColor = Color.FromArgb(248, 249, 250);
+            pnlAirportMapCanvas.Controls.Add(lblAirportMapTitle);
+            pnlAirportMapCanvas.Dock = DockStyle.Fill;
+            pnlAirportMapCanvas.Location = new Point(20, 20);
+            pnlAirportMapCanvas.Name = "pnlAirportMapCanvas";
+            pnlAirportMapCanvas.Size = new Size(824, 690);
+            pnlAirportMapCanvas.TabIndex = 0;
+            // 
+            // lblAirportMapTitle
+            // 
+            lblAirportMapTitle.AutoSize = true;
+            lblAirportMapTitle.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblAirportMapTitle.ForeColor = Color.FromArgb(33, 37, 41);
+            lblAirportMapTitle.Location = new Point(25, 25);
+            lblAirportMapTitle.Margin = new Padding(4, 0, 4, 0);
+            lblAirportMapTitle.Name = "lblAirportMapTitle";
+            lblAirportMapTitle.Size = new Size(637, 41);
+            lblAirportMapTitle.TabIndex = 0;
+            lblAirportMapTitle.Text = "Схема аэропорта в реальном времени";
+            // 
+            // pnlAirportControls
+            // 
+            pnlAirportControls.Controls.Add(btnAllowLanding);
+            pnlAirportControls.Controls.Add(btnAllowTakeoff);
+            pnlAirportControls.Controls.Add(btnSuppliesManagement);
+            pnlAirportControls.Controls.Add(btnMaintenance);
+            pnlAirportControls.Dock = DockStyle.Bottom;
+            pnlAirportControls.Location = new Point(20, 542);
+            pnlAirportControls.Name = "pnlAirportControls";
+            pnlAirportControls.Size = new Size(824, 168);
+            pnlAirportControls.TabIndex = 1;
+            // 
+            // btnMaintenance
+            // 
+            btnMaintenance.BackColor = Color.FromArgb(46, 90, 136);
+            btnMaintenance.FlatAppearance.BorderSize = 0;
+            btnMaintenance.FlatStyle = FlatStyle.Flat;
+            btnMaintenance.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnMaintenance.ForeColor = Color.White;
+            btnMaintenance.Location = new Point(12, 12);
+            btnMaintenance.Margin = new Padding(10);
+            btnMaintenance.Name = "btnMaintenance";
+            btnMaintenance.Size = new Size(375, 68);
+            btnMaintenance.TabIndex = 0;
+            btnMaintenance.Text = "Техническое обслуживание";
+            btnMaintenance.UseVisualStyleBackColor = false;
+            btnMaintenance.Click += btnMaintenance_Click;
+            // 
+            // btnSuppliesManagement
+            // 
+            btnSuppliesManagement.BackColor = Color.FromArgb(46, 90, 136);
+            btnSuppliesManagement.FlatAppearance.BorderSize = 0;
+            btnSuppliesManagement.FlatStyle = FlatStyle.Flat;
+            btnSuppliesManagement.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnSuppliesManagement.ForeColor = Color.White;
+            btnSuppliesManagement.Location = new Point(12, 90);
+            btnSuppliesManagement.Margin = new Padding(10);
+            btnSuppliesManagement.Name = "btnSuppliesManagement";
+            btnSuppliesManagement.Size = new Size(375, 68);
+            btnSuppliesManagement.TabIndex = 1;
+            btnSuppliesManagement.Text = "Управление припасами";
+            btnSuppliesManagement.UseVisualStyleBackColor = false;
+            btnSuppliesManagement.Click += btnSuppliesManagement_Click;
+            // 
+            // btnAllowTakeoff
+            // 
+            btnAllowTakeoff.BackColor = Color.FromArgb(46, 90, 136);
+            btnAllowTakeoff.FlatAppearance.BorderSize = 0;
+            btnAllowTakeoff.FlatStyle = FlatStyle.Flat;
+            btnAllowTakeoff.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAllowTakeoff.ForeColor = Color.White;
+            btnAllowTakeoff.Location = new Point(440, 12);
+            btnAllowTakeoff.Margin = new Padding(10);
+            btnAllowTakeoff.Name = "btnAllowTakeoff";
+            btnAllowTakeoff.Size = new Size(375, 68);
+            btnAllowTakeoff.TabIndex = 2;
+            btnAllowTakeoff.Text = "Разрешить взлёт";
+            btnAllowTakeoff.UseVisualStyleBackColor = false;
+            btnAllowTakeoff.Click += btnAllowTakeoff_Click;
+            // 
+            // btnAllowLanding
+            // 
+            btnAllowLanding.BackColor = Color.FromArgb(46, 90, 136);
+            btnAllowLanding.FlatAppearance.BorderSize = 0;
+            btnAllowLanding.FlatStyle = FlatStyle.Flat;
+            btnAllowLanding.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAllowLanding.ForeColor = Color.White;
+            btnAllowLanding.Location = new Point(440, 90);
+            btnAllowLanding.Margin = new Padding(10);
+            btnAllowLanding.Name = "btnAllowLanding";
+            btnAllowLanding.Size = new Size(375, 68);
+            btnAllowLanding.TabIndex = 3;
+            btnAllowLanding.Text = "Разрешить посадку";
+            btnAllowLanding.UseVisualStyleBackColor = false;
+            btnAllowLanding.Click += btnAllowLanding_Click;
+            // 
+            // pnlAirportSection
+            // 
+            pnlAirportSection.BackColor = Color.White;
+            pnlAirportSection.BorderStyle = BorderStyle.FixedSingle;
+            pnlAirportSection.Controls.Add(pnlAirportControls);
+            pnlAirportSection.Controls.Add(pnlAirportMapCanvas);
+            pnlAirportSection.Dock = DockStyle.Fill;
+            pnlAirportSection.Location = new Point(18, 18);
+            pnlAirportSection.Margin = new Padding(3, 3, 10, 3);
+            pnlAirportSection.Name = "pnlAirportSection";
+            pnlAirportSection.Padding = new Padding(20);
+            pnlAirportSection.Size = new Size(866, 732);
+            pnlAirportSection.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -526,15 +526,15 @@
             menuMain.PerformLayout();
             statusMain.ResumeLayout(false);
             statusMain.PerformLayout();
-            tableLayoutPanelMain.ResumeLayout(false);
-            pnlAirportSection.ResumeLayout(false);
-            pnlAirportControls.ResumeLayout(false);
-            pnlAirportMapCanvas.ResumeLayout(false);
-            pnlAirportMapCanvas.PerformLayout();
             pnlScheduleSection.ResumeLayout(false);
             pnlScheduleSection.PerformLayout();
-            pnlCrudButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvFlightsSchedule).EndInit();
+            pnlCrudButtons.ResumeLayout(false);
+            tableLayoutPanelMain.ResumeLayout(false);
+            pnlAirportMapCanvas.ResumeLayout(false);
+            pnlAirportMapCanvas.PerformLayout();
+            pnlAirportControls.ResumeLayout(false);
+            pnlAirportSection.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -562,21 +562,21 @@
         private ToolStripStatusLabel stsAirport;             // Current airport display
         private ToolStripStatusLabel stsSeparator2;          // Visual separator in status bar
         private ToolStripStatusLabel stsTime;                // Current time display (orange accent)
-        private TableLayoutPanel tableLayoutPanelMain;       // Main responsive layout container
-        private Panel pnlAirportSection;                     // Left section containing airport map
-        private Panel pnlAirportMapCanvas;                   // Canvas for airport visualization
-        private Label lblAirportMapTitle;                    // Title for airport map section
-        private Panel pnlAirportControls;                    // Container for airport operation buttons
-        private Button btnMaintenance;                       // Maintenance operations button
-        private Button btnSuppliesManagement;                // Supplies management button
-        private Button btnAllowTakeoff;                      // Takeoff permission button
-        private Button btnAllowLanding;                      // Landing permission button
-        private Panel pnlScheduleSection;                    // Right section containing flight schedule
-        private Label lblFlightsScheduleTitle;               // Title for flights schedule section
-        private Zuby.ADGV.AdvancedDataGridView dgvFlightsSchedule; // Flight schedule data grid
-        private Panel pnlCrudButtons;                        // Container for CRUD operation buttons
-        private Button btnAddFlight;                         // Add new flight button
-        private Button btnEditFlight;                        // Edit selected flight button
-        private Button btnDeleteFlight;                      // Delete selected flight button
+        private Panel pnlScheduleSection;
+        private Panel pnlCrudButtons;
+        private Button btnDeleteFlight;
+        private Button btnEditFlight;
+        private Button btnAddFlight;
+        private Zuby.ADGV.AdvancedDataGridView dgvFlightsSchedule;
+        private Label lblFlightsScheduleTitle;
+        private TableLayoutPanel tableLayoutPanelMain;
+        private Panel pnlAirportSection;
+        private Panel pnlAirportControls;
+        private Button btnAllowLanding;
+        private Button btnAllowTakeoff;
+        private Button btnSuppliesManagement;
+        private Button btnMaintenance;
+        private Panel pnlAirportMapCanvas;
+        private Label lblAirportMapTitle;
     }
 }

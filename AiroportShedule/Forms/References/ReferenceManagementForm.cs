@@ -147,7 +147,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var crewId = (int)dgvFlightCrew.SelectedRows[0].Cells["Id"].Value;
+            var crewId = (int)dgvFlightCrew.SelectedRows[0].Cells[0].Value;
             var crew = _airportService.GetCrewMemberById(crewId);
 
             if (crew == null)
@@ -176,7 +176,7 @@ namespace AiroportShedule.Forms
 
             if (result == DialogResult.Yes)
             {
-                var crewId = (int)dgvFlightCrew.SelectedRows[0].Cells["Id"].Value;
+                var crewId = (int)dgvFlightCrew.SelectedRows[0].Cells[0].Value;
 
                 try
                 {
@@ -215,7 +215,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var crewId = (int)dgvSupportCrew.SelectedRows[0].Cells["Id"].Value;
+            var crewId = (int)dgvSupportCrew.SelectedRows[0].Cells[0].Value;
             var crew = _airportService.GetCrewMemberById(crewId);
 
             if (crew == null)
@@ -224,7 +224,24 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            using var editor = new CrewEditorForm(_airportService, CrewEditorForm.CrewType.Support, crew);
+            // Определяем тип редактора на основе роли сотрудника
+            CrewEditorForm.CrewType editorType;
+
+            if (crew.Role == "Техник")
+            {
+                editorType = CrewEditorForm.CrewType.Support; // Используем Support для техников (как в вашей логике)
+            }
+            else if (crew.Role == "Обслуживающий персонал")
+            {
+                editorType = CrewEditorForm.CrewType.Support; // Оба типа используют один редактор
+            }
+            else
+            {
+                // Если роль не поддерживается, используем Support по умолчанию
+                editorType = CrewEditorForm.CrewType.Support;
+            }
+
+            using var editor = new CrewEditorForm(_airportService, editorType, crew);
             if (editor.ShowDialog() == DialogResult.OK)
             {
                 LoadData();
@@ -244,7 +261,7 @@ namespace AiroportShedule.Forms
 
             if (result == DialogResult.Yes)
             {
-                var crewId = (int)dgvSupportCrew.SelectedRows[0].Cells["Id"].Value;
+                var crewId = (int)dgvSupportCrew.SelectedRows[0].Cells[0].Value;
 
                 try
                 {
@@ -283,7 +300,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var hangarId = (int)dgvSingleList.SelectedRows[0].Cells["Id"].Value;
+            var hangarId = (int)dgvSingleList.SelectedRows[0].Cells[0].Value;
             var hangar = _airportService.GetHangarById(hangarId);
 
             if (hangar == null)
@@ -312,7 +329,7 @@ namespace AiroportShedule.Forms
 
             if (result == DialogResult.Yes)
             {
-                var hangarId = (int)dgvSingleList.SelectedRows[0].Cells["Id"].Value;
+                var hangarId = (int)dgvSingleList.SelectedRows[0].Cells[0].Value;
 
                 try
                 {
@@ -351,7 +368,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var routeId = (int)dgvSingleList.SelectedRows[0].Cells["Id"].Value;
+            var routeId = (int)dgvSingleList.SelectedRows[0].Cells[0].Value;
             var route = _airportService.GetRouteById(routeId);
 
             if (route == null)
@@ -380,7 +397,7 @@ namespace AiroportShedule.Forms
 
             if (result == DialogResult.Yes)
             {
-                var routeId = (int)dgvSingleList.SelectedRows[0].Cells["Id"].Value;
+                var routeId = (int)dgvSingleList.SelectedRows[0].Cells[0].Value;
 
                 try
                 {
@@ -399,6 +416,11 @@ namespace AiroportShedule.Forms
                     MessageBox.Show($"Ошибка при удалении: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void dgvFlightCrew_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

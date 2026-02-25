@@ -125,7 +125,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var equipmentId = (int)dgvEquipment.SelectedRows[0].Cells["Id"].Value;
+            var equipmentId = (int)dgvEquipment.SelectedRows[0].Cells[0].Value;
             var equipment = _airportService.GetEquipmentById(equipmentId);
 
             if (equipment == null)
@@ -154,7 +154,7 @@ namespace AiroportShedule.Forms
 
             if (result == DialogResult.Yes)
             {
-                var equipmentId = (int)dgvEquipment.SelectedRows[0].Cells["Id"].Value;
+                var equipmentId = (int)dgvEquipment.SelectedRows[0].Cells[0].Value;
 
                 try
                 {
@@ -193,7 +193,7 @@ namespace AiroportShedule.Forms
                 return;
             }
 
-            var supplyId = (int)dgvSupplies.SelectedRows[0].Cells["Id"].Value;
+            var supplyId = (int)dgvSupplies.SelectedRows[0].Cells[0].Value;
             var supply = _airportService.GetSupplyById(supplyId);
 
             if (supply == null)
@@ -222,7 +222,7 @@ namespace AiroportShedule.Forms
 
             if (result == DialogResult.Yes)
             {
-                var supplyId = (int)dgvSupplies.SelectedRows[0].Cells["Id"].Value;
+                var supplyId = (int)dgvSupplies.SelectedRows[0].Cells[0].Value;
 
                 try
                 {

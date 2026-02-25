@@ -28,185 +28,190 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.pnlButtons = new System.Windows.Forms.Panel();
-            this.btnAllowLanding = new System.Windows.Forms.Button();
-            this.btnAllowTakeoff = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.dgvSchedule = new System.Windows.Forms.DataGridView();
-            this.pnlFilter = new System.Windows.Forms.Panel();
-            this.lblDateFilter = new System.Windows.Forms.Label();
-            this.dtpFilterDate = new System.Windows.Forms.DateTimePicker();
-            this.pnlButtons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSchedule)).BeginInit();
-            this.pnlFilter.SuspendLayout();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            pnlButtons = new Panel();
+            btnAllowLanding = new Button();
+            btnAllowTakeoff = new Button();
+            btnDelete = new Button();
+            btnEdit = new Button();
+            btnAdd = new Button();
+            dgvSchedule = new DataGridView();
+            pnlFilter = new Panel();
+            lblDateFilter = new Label();
+            dtpFilterDate = new DateTimePicker();
+            pnlButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvSchedule).BeginInit();
+            pnlFilter.SuspendLayout();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblTitle.Location = new System.Drawing.Point(30, 25);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(480, 46);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Расписание воздушных путей";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblTitle.ForeColor = Color.FromArgb(33, 37, 41);
+            lblTitle.Location = new Point(30, 25);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(557, 45);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Расписание воздушных путей";
             // 
             // pnlButtons
             // 
-            this.pnlButtons.Controls.Add(this.btnAllowLanding);
-            this.pnlButtons.Controls.Add(this.btnAllowTakeoff);
-            this.pnlButtons.Controls.Add(this.btnDelete);
-            this.pnlButtons.Controls.Add(this.btnEdit);
-            this.pnlButtons.Controls.Add(this.btnAdd);
-            this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlButtons.Location = new System.Drawing.Point(0, 680);
-            this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(1200, 100);
-            this.pnlButtons.TabIndex = 1;
+            pnlButtons.Controls.Add(btnAllowLanding);
+            pnlButtons.Controls.Add(btnAllowTakeoff);
+            pnlButtons.Controls.Add(btnDelete);
+            pnlButtons.Controls.Add(btnEdit);
+            pnlButtons.Controls.Add(btnAdd);
+            pnlButtons.Dock = DockStyle.Bottom;
+            pnlButtons.Location = new Point(0, 680);
+            pnlButtons.Name = "pnlButtons";
+            pnlButtons.Size = new Size(1200, 100);
+            pnlButtons.TabIndex = 1;
             // 
             // btnAllowLanding
             // 
-            this.btnAllowLanding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
-            this.btnAllowLanding.FlatAppearance.BorderSize = 0;
-            this.btnAllowLanding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAllowLanding.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAllowLanding.ForeColor = System.Drawing.Color.White;
-            this.btnAllowLanding.Location = new System.Drawing.Point(950, 20);
-            this.btnAllowLanding.Name = "btnAllowLanding";
-            this.btnAllowLanding.Size = new System.Drawing.Size(230, 60);
-            this.btnAllowLanding.TabIndex = 4;
-            this.btnAllowLanding.Text = "Разрешить посадку";
-            this.btnAllowLanding.UseVisualStyleBackColor = false;
+            btnAllowLanding.BackColor = Color.FromArgb(59, 130, 246);
+            btnAllowLanding.FlatAppearance.BorderSize = 0;
+            btnAllowLanding.FlatStyle = FlatStyle.Flat;
+            btnAllowLanding.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAllowLanding.ForeColor = Color.White;
+            btnAllowLanding.Location = new Point(950, 10);
+            btnAllowLanding.Name = "btnAllowLanding";
+            btnAllowLanding.Size = new Size(230, 78);
+            btnAllowLanding.TabIndex = 4;
+            btnAllowLanding.Text = "Разрешить посадку";
+            btnAllowLanding.UseVisualStyleBackColor = false;
+            btnAllowLanding.Click += btnAllowLanding_Click;
             // 
             // btnAllowTakeoff
             // 
-            this.btnAllowTakeoff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(197)))), ((int)(((byte)(94)))));
-            this.btnAllowTakeoff.FlatAppearance.BorderSize = 0;
-            this.btnAllowTakeoff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAllowTakeoff.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAllowTakeoff.ForeColor = System.Drawing.Color.White;
-            this.btnAllowTakeoff.Location = new System.Drawing.Point(700, 20);
-            this.btnAllowTakeoff.Name = "btnAllowTakeoff";
-            this.btnAllowTakeoff.Size = new System.Drawing.Size(230, 60);
-            this.btnAllowTakeoff.TabIndex = 3;
-            this.btnAllowTakeoff.Text = "Разрешить взлёт";
-            this.btnAllowTakeoff.UseVisualStyleBackColor = false;
+            btnAllowTakeoff.BackColor = Color.FromArgb(34, 197, 94);
+            btnAllowTakeoff.FlatAppearance.BorderSize = 0;
+            btnAllowTakeoff.FlatStyle = FlatStyle.Flat;
+            btnAllowTakeoff.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAllowTakeoff.ForeColor = Color.White;
+            btnAllowTakeoff.Location = new Point(700, 10);
+            btnAllowTakeoff.Name = "btnAllowTakeoff";
+            btnAllowTakeoff.Size = new Size(230, 78);
+            btnAllowTakeoff.TabIndex = 3;
+            btnAllowTakeoff.Text = "Разрешить взлёт";
+            btnAllowTakeoff.UseVisualStyleBackColor = false;
+            btnAllowTakeoff.Click += btnAllowTakeoff_Click;
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(450, 20);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(230, 60);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "Удалить рейс";
-            this.btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.BackColor = Color.FromArgb(220, 38, 38);
+            btnDelete.FlatAppearance.BorderSize = 0;
+            btnDelete.FlatStyle = FlatStyle.Flat;
+            btnDelete.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(450, 10);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(230, 80);
+            btnDelete.TabIndex = 2;
+            btnDelete.Text = "Удалить рейс";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(230, 20);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(200, 60);
-            this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Редактировать";
-            this.btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.BackColor = Color.FromArgb(46, 90, 136);
+            btnEdit.FlatAppearance.BorderSize = 0;
+            btnEdit.FlatStyle = FlatStyle.Flat;
+            btnEdit.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnEdit.ForeColor = Color.White;
+            btnEdit.Location = new Point(230, 10);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(200, 80);
+            btnEdit.TabIndex = 1;
+            btnEdit.Text = "Редактировать";
+            btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(90)))), ((int)(((byte)(136)))));
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(20, 20);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(200, 60);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Добавить рейс";
-            this.btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.BackColor = Color.FromArgb(46, 90, 136);
+            btnAdd.FlatAppearance.BorderSize = 0;
+            btnAdd.FlatStyle = FlatStyle.Flat;
+            btnAdd.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            btnAdd.ForeColor = Color.White;
+            btnAdd.Location = new Point(12, 10);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(200, 80);
+            btnAdd.TabIndex = 0;
+            btnAdd.Text = "Добавить рейс";
+            btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // dgvSchedule
             // 
-            this.dgvSchedule.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSchedule.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvSchedule.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSchedule.Location = new System.Drawing.Point(0, 146);
-            this.dgvSchedule.Name = "dgvSchedule";
-            this.dgvSchedule.RowHeadersWidth = 62;
-            this.dgvSchedule.RowTemplate.Height = 35;
-            this.dgvSchedule.Size = new System.Drawing.Size(1200, 534);
-            this.dgvSchedule.TabIndex = 2;
+            dgvSchedule.BackgroundColor = Color.White;
+            dgvSchedule.BorderStyle = BorderStyle.None;
+            dgvSchedule.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvSchedule.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSchedule.Dock = DockStyle.Fill;
+            dgvSchedule.Location = new Point(0, 61);
+            dgvSchedule.Name = "dgvSchedule";
+            dgvSchedule.RowHeadersWidth = 62;
+            dgvSchedule.RowTemplate.Height = 35;
+            dgvSchedule.Size = new Size(1200, 619);
+            dgvSchedule.TabIndex = 2;
             // 
             // pnlFilter
             // 
-            this.pnlFilter.Controls.Add(this.lblDateFilter);
-            this.pnlFilter.Controls.Add(this.dtpFilterDate);
-            this.pnlFilter.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlFilter.Location = new System.Drawing.Point(0, 85);
-            this.pnlFilter.Name = "pnlFilter";
-            this.pnlFilter.Size = new System.Drawing.Size(1200, 61);
-            this.pnlFilter.TabIndex = 3;
+            pnlFilter.Controls.Add(lblDateFilter);
+            pnlFilter.Controls.Add(dtpFilterDate);
+            pnlFilter.Dock = DockStyle.Top;
+            pnlFilter.Location = new Point(0, 0);
+            pnlFilter.Name = "pnlFilter";
+            pnlFilter.Size = new Size(1200, 61);
+            pnlFilter.TabIndex = 3;
             // 
             // lblDateFilter
             // 
-            this.lblDateFilter.AutoSize = true;
-            this.lblDateFilter.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblDateFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.lblDateFilter.Location = new System.Drawing.Point(30, 15);
-            this.lblDateFilter.Name = "lblDateFilter";
-            this.lblDateFilter.Size = new System.Drawing.Size(180, 33);
-            this.lblDateFilter.TabIndex = 1;
-            this.lblDateFilter.Text = "Фильтр по дате:";
+            lblDateFilter.AutoSize = true;
+            lblDateFilter.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblDateFilter.ForeColor = Color.FromArgb(33, 37, 41);
+            lblDateFilter.Location = new Point(30, 15);
+            lblDateFilter.Name = "lblDateFilter";
+            lblDateFilter.Size = new Size(204, 33);
+            lblDateFilter.TabIndex = 1;
+            lblDateFilter.Text = "Фильтр по дате:";
             // 
             // dtpFilterDate
             // 
-            this.dtpFilterDate.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dtpFilterDate.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dtpFilterDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFilterDate.Location = new System.Drawing.Point(230, 10);
-            this.dtpFilterDate.Name = "dtpFilterDate";
-            this.dtpFilterDate.Size = new System.Drawing.Size(200, 40);
-            this.dtpFilterDate.TabIndex = 0;
+            dtpFilterDate.CalendarFont = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dtpFilterDate.Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dtpFilterDate.Format = DateTimePickerFormat.Short;
+            dtpFilterDate.Location = new Point(240, 9);
+            dtpFilterDate.Name = "dtpFilterDate";
+            dtpFilterDate.Size = new Size(200, 40);
+            dtpFilterDate.TabIndex = 0;
             // 
             // RouteScheduleForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1200, 780);
-            this.Controls.Add(this.dgvSchedule);
-            this.Controls.Add(this.pnlFilter);
-            this.Controls.Add(this.pnlButtons);
-            this.Controls.Add(this.lblTitle);
-            this.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "RouteScheduleForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Расписание воздушных путей — Аэропорт";
-            this.pnlButtons.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSchedule)).EndInit();
-            this.pnlFilter.ResumeLayout(false);
-            this.pnlFilter.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(15F, 33F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(248, 249, 250);
+            ClientSize = new Size(1200, 780);
+            Controls.Add(dgvSchedule);
+            Controls.Add(pnlFilter);
+            Controls.Add(pnlButtons);
+            Controls.Add(lblTitle);
+            Font = new Font("Times New Roman", 14F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "RouteScheduleForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Расписание воздушных путей — Аэропорт";
+            pnlButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvSchedule).EndInit();
+            pnlFilter.ResumeLayout(false);
+            pnlFilter.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
