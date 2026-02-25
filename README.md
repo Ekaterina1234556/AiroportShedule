@@ -91,15 +91,14 @@
 
 ### Главная панель управления
 
-![Главная форма](<img width="1920" height="1018" alt="2026-02-25_12-17-31" src="https://github.com/user-attachments/assets/abf9d4d3-437b-454b-821c-091d86f264cc" />
+### Главная форма
+<img width="1920" height="1018" alt="2026-02-25_12-17-31" src="https://github.com/user-attachments/assets/abf9d4d3-437b-454b-821c-091d86f264cc" />
 
-)
 *Схема аэропорта в реальном времени с панелью управления рейсами*
 
 ### Форма авторизации
-![Форма входа](<img width="422" height="682" alt="2026-02-25_12-16-48" src="https://github.com/user-attachments/assets/4d1b7f2e-0ae5-4832-851b-7c8113718231" />
+<img width="422" height="682" alt="2026-02-25_12-16-48" src="https://github.com/user-attachments/assets/4d1b7f2e-0ae5-4832-851b-7c8113718231" />
 
-)
 *Безопасная аутентификация с проверкой учётных данных из базы данных*
 
 ---
